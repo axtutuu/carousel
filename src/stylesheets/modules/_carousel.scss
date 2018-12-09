@@ -1,0 +1,28 @@
+.carousel {
+  &:not(:root) {
+    position: relative;
+  }
+
+  & &__items-wrap {
+    width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  & &__items {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  & &__item {
+    display: block;
+    min-width: 480px;
+    min-height: 360px;
+    margin-left: 10px;
+    background-color: silver;
+    text-align: center;
+    line-height: 360px;
+    color: white;
+  }
+}
