@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("var items=document.querySelector(\".js-carousel-items\");var next=document.querySelector(\".js-next\");var prev=document.querySelector(\".js-prev\");var index=0;next.addEventListener(\"click\",function(evt){index+=1;items.style.transform=\"translateX(-\"+index*490+\"px)\";});prev.addEventListener(\"click\",function(evt){index-=1;items.style.transform=\"translateX(-\"+index*490+\"px)\";});\n\n//# sourceURL=webpack:///./src/javascripts/application.js?");
+eval("var items=document.querySelector(\".js-carousel-items\");var itemNodes=document.querySelectorAll(\".js-item\");var next=document.querySelector(\".js-next\");var prev=document.querySelector(\".js-prev\");var maxIndex=itemNodes.length;var index=0;next.addEventListener(\"click\",function(evt){if(index>=maxIndex-1)return;index+=1;items.style.transform=\"translateX(-\"+index*490+\"px)\";});prev.addEventListener(\"click\",function(evt){if(index<0)return;index-=1;items.style.transform=\"translateX(-\"+index*490+\"px)\";});\n\n//# sourceURL=webpack:///./src/javascripts/application.js?");
 
 /***/ })
 
